@@ -34,13 +34,11 @@
       padding: 0;
     }
 
-    /* ACCESIBILIDAD / FOCO PARA TECLADO (OPERABLE) */
     a:focus, button:focus {
       outline: 3px solid var(--focus-color);
       outline-offset: 2px;
     }
 
-    /* BARRA DE HERRAMIENTAS DE ACCESIBILIDAD */
     .accessibility-bar {
       background: var(--text-color);
       color: var(--bg-color);
@@ -126,7 +124,6 @@
 </head>
 <body>
 
-  <!-- BARRA DE ACCESIBILIDAD (OPERABLE Y COMPRENSIBLE) -->
   <div class="accessibility-bar" aria-label="Herramientas de Accesibilidad">
     <span>Accesibilidad:</span>
     <button onclick="toggleContrast()" aria-label="Cambiar a Modo Alto Contraste">Alto Contraste</button>
@@ -147,20 +144,17 @@
   </nav>
 
   <main>
-    <!-- IMAGEN PRINCIPAL (PERCEPTIBLE) -->
     <section>
       <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80" 
            alt="Taza de café recién servida en una mesa de madera con granos tostados alrededor" 
            class="hero-img">
     </section>
 
-    <!-- SECCIÓN PROBLEMA -->
     <section id="problema">
       <h2>Definición del Problema</h2>
       <p>Jóvenes y personas con poca experiencia laboral en nuestra comunidad enfrentan barreras para integrarse al mercado trabajo formal. <strong>Café con Oportunidades</strong> funciona como un espacio de primera experiencia laboral y capacitación integral.</p>
     </section>
 
-    <!-- SECCIÓN MODELO -->
     <section id="modelo">
       <h2>Nuestro Modelo de Negocio Inclusivo</h2>
       <div class="card-grid">
@@ -175,7 +169,6 @@
       </div>
     </section>
 
-    <!-- SECCIÓN INGRESOS -->
     <section id="ingresos">
       <h2>Líneas de Negocio e Ingresos</h2>
       <ul>
@@ -186,7 +179,6 @@
       </ul>
     </section>
 
-    <!-- SECCIÓN METODOLOGÍA POUR (EXPLICACIÓN ACADÉMICA) -->
     <section id="pour">
       <h2>Implementación de Accesibilidad (Metodología POUR)</h2>
       <div class="card-grid">
@@ -214,7 +206,6 @@
     <p>&copy; 2026 Café con Oportunidades - Proyecto para la materia <em>Diseñar para Compartir</em></p>
   </footer>
 
-  <!-- SCRIPT PARA FUNCIONES DE ACCESIBILIDAD -->
   <script>
     function toggleContrast() {
       document.body.classList.toggle('high-contrast');
